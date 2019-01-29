@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iK2-NT-cvk">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="MyL-gb-hzB">
+            <objects>
+                <viewController id="iK2-NT-cvk" customClass="HomeViewController" customModule="Chaat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BOp-9c-saU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lawless-capture-1322558-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="cKo-33-6LK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cjT-jz-ACL">
+                                <rect key="frame" x="60" y="341" width="255" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-th-ge2">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="60"/>
+                                        <color key="backgroundColor" red="0.35702505707740784" green="0.7374463677406311" blue="0.42346847057342529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="c0p-Le-hby"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signUpButtonTapped:" destination="iK2-NT-cvk" eventType="touchUpInside" id="sqP-UN-cmN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHH-eP-nun">
+                                        <rect key="frame" x="0.0" y="80" width="255" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6HC-kl-AOD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="iK2-NT-cvk" eventType="touchUpInside" id="XiA-19-WWL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hUd-th-ge2" firstAttribute="leading" secondItem="cjT-jz-ACL" secondAttribute="leading" id="0Ig-pL-p2X"/>
+                                    <constraint firstItem="HHH-eP-nun" firstAttribute="leading" secondItem="cjT-jz-ACL" secondAttribute="leading" id="JFG-Gw-PD7"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHH-eP-nun" secondAttribute="trailing" id="Pom-Py-Ywc"/>
+                                    <constraint firstAttribute="trailing" secondItem="hUd-th-ge2" secondAttribute="trailing" id="qaK-Pj-TGt"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Chaat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="L2Y-pP-DrT">
+                                <rect key="frame" x="0.0" y="61" width="375" height="36"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dt5-at-cg8" firstAttribute="trailing" secondItem="cjT-jz-ACL" secondAttribute="trailing" constant="60" id="5Ni-26-Gpr"/>
+                            <constraint firstItem="cKo-33-6LK" firstAttribute="top" secondItem="L2Y-pP-DrT" secondAttribute="bottom" constant="-97" id="P5k-JP-DKN"/>
+                            <constraint firstItem="cjT-jz-ACL" firstAttribute="centerY" secondItem="dt5-at-cg8" secondAttribute="centerY" id="W9Q-vG-Siv"/>
+                            <constraint firstItem="L2Y-pP-DrT" firstAttribute="leading" secondItem="dt5-at-cg8" secondAttribute="leading" id="bgT-Em-Ccf"/>
+                            <constraint firstItem="cKo-33-6LK" firstAttribute="leading" secondItem="dt5-at-cg8" secondAttribute="leading" id="ew2-wk-aDE"/>
+                            <constraint firstItem="cKo-33-6LK" firstAttribute="bottom" secondItem="dt5-at-cg8" secondAttribute="bottom" id="icj-Oc-GLj"/>
+                            <constraint firstItem="cjT-jz-ACL" firstAttribute="centerX" secondItem="dt5-at-cg8" secondAttribute="centerX" id="kGQ-98-Nn3"/>
+                            <constraint firstItem="cKo-33-6LK" firstAttribute="top" secondItem="BOp-9c-saU" secondAttribute="top" id="m14-9Z-PFa"/>
+                            <constraint firstItem="L2Y-pP-DrT" firstAttribute="trailing" secondItem="dt5-at-cg8" secondAttribute="trailing" id="pLV-Ag-EJb"/>
+                            <constraint firstItem="cKo-33-6LK" firstAttribute="trailing" secondItem="dt5-at-cg8" secondAttribute="trailing" id="rRq-7I-VG6"/>
+                            <constraint firstItem="cjT-jz-ACL" firstAttribute="leading" secondItem="dt5-at-cg8" secondAttribute="leading" constant="60" id="w2F-eE-VBu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dt5-at-cg8"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="HHH-eP-nun" id="fqd-ak-pNp"/>
+                        <outlet property="signUpButton" destination="hUd-th-ge2" id="hc3-ZQ-7pn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owe-g5-G4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.19999999999999" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lawless-capture-1322558-unsplash" width="4480" height="6720"/>
+    </resources>
+</document>
